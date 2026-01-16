@@ -5,8 +5,8 @@
   position: relative;
   padding-bottom: 5rem;
   overflow: hidden;
-  background: url(JIMFOCUG_BRANDING/General_Asset/Free-Lorry-Truck-Branding.png)
-    no-repeat center center/cover;
+  background: url(JIMFOCUG_BRANDING/General_Asset/mac.png) no-repeat center
+    center/cover;
   isolation: isolate;
   z-index: -1;
 }
@@ -49,7 +49,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .services__card-title {

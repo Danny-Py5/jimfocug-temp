@@ -18,7 +18,7 @@
   --bg-color: var(--primary-color);
   --white: whitesmoke;
   --header-hero-bacground-color: #ffd5ff;
-  --service-card-bg: rgba(44, 44, 44, 0.623);
+  --service-card-bg: rgba(0, 0, 29, 0.623);
 
   /* PADDING */
   --padding-header: 0.8rem;
@@ -55,6 +55,9 @@
 
   /* shadows */
   --box-shadow-light: 0 0 10px rgba(0, 0, 0, 0.151);
+
+  /* line-height: ; */
+  --line-height: 1.6;
 }
 
 /* || RESETS */
@@ -68,7 +71,11 @@
 /* || GENERAL STYLES */
 html {
   scroll-behavior: smooth;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI";
   font-size: var(--font-size);
   scroll-margin-top: 800px;
 }
@@ -108,6 +115,9 @@ a:hover {
 }
 li {
   list-style-type: none;
+}
+span {
+  color: var(--color-accent) !important;
 }
 
 button {
@@ -241,7 +251,7 @@ body {
   margin-bottom: 3rem;
   color: #666;
   font-size: 1.125rem;
-  line-height: 1.6;
+  line-height: var(--line-height);
 }
 
 /* Grid Layout */
@@ -258,7 +268,9 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
@@ -334,7 +346,9 @@ body {
   width: 100%;
   max-width: 1500px; /* section-wrapper max-width */
   z-index: 9999;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+  transition:
+    transform 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
     box-shadow 0.3s ease-in-out;
   padding: 1rem;
 }
@@ -393,7 +407,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
   padding: 0;
 }
 

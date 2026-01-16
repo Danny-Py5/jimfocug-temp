@@ -89,7 +89,9 @@ export function Header() {
 
         <div className="hero child-two flex">
           <div className="right">
-            <h1 className="hero__h1">What's Slowing Down Your Business?</h1>
+            <h1 className="hero__h1">
+              What's <span>Slowing Down</span> Your Business?
+            </h1>
             <p>
               Most businesses lose time, money and energy because of poor
               system. we are a digital transformation and technology solutions

@@ -5,19 +5,19 @@
   /* background: #000; */
   box-shadow: 0 5px 30px rgba(201, 201, 201, 0.301);
   padding: var(--padding-header);
-  background: url(/JIMFOCUG_BRANDING/General_Asset/mac.png) no-repeat center
-    left;
+  background: url(/JIMFOCUG_BRANDING/General_Asset/Free-Lorry-Truck-Branding.png)
+    no-repeat center center;
   background-size: cover;
   isolation: isolate;
   color: var(--white);
-  height: 600px;
+  height: 100dvh;
 }
 .header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(30deg, rgb(0, 0, 59), rgb(0, 30, 39));
-  opacity: 0.7;
+  background: linear-gradient(30deg, rgb(0, 0, 0), rgb(0, 30, 39));
+  opacity: 0.9;
   z-index: -1;
 }
 .header__wrapper {
@@ -84,7 +84,9 @@
 /* hero */
 .hero {
   position: relative;
-  padding: 40px var(--padding-small);
+  /* padding: 40px var(--padding-small); */
+  /* justify-content: center; */
+  align-items: center;
   flex: 1;
 
   & * {
@@ -108,6 +110,7 @@
 }
 .hero__h1 + p {
   max-width: 100ch;
+  line-height: 1.6;
 }
 
 @media (max-width: 600px) {
