@@ -1,0 +1,115 @@
+/* Services Section */
+.services {
+  background-color: var(--flat-black);
+  color: var(--white);
+  position: relative;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  background: url(JIMFOCUG_BRANDING/General_Asset/Free-Lorry-Truck-Branding.png)
+    no-repeat center center/cover;
+  isolation: isolate;
+  z-index: -1;
+}
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--flat-black-transparent);
+  z-index: 0;
+}
+
+.services__container {
+  display: block;
+}
+
+.services__main-title {
+  color: var(--white);
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 0 var(--padding);
+}
+
+.services__card {
+  padding: var(--padding);
+  background-color: var(--service-card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  cursor: default;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services__card-title {
+  font-size: var(--card-title-font-size);
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.services__card-description {
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.services__card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.services__card-offerings {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.services__card-offerings h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.services__card-offerings ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services__card-offerings li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.services__card-offerings li i {
+  color: var(--color-accent);
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Ensure main title and other text are above the overlay */
+.services__main-title,
+.services__grid {
+  position: relative;
+}

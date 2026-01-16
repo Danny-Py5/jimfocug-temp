@@ -1,0 +1,158 @@
+.header {
+  gap: var(--gap);
+  position: relative;
+  /* background-color: var(--white); */
+  /* background: #000; */
+  box-shadow: 0 5px 30px rgba(201, 201, 201, 0.301);
+  padding: var(--padding-header);
+  background: url(/JIMFOCUG_BRANDING/General_Asset/mac.png) no-repeat center
+    left;
+  background-size: cover;
+  isolation: isolate;
+  color: var(--white);
+  height: 600px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(30deg, rgb(0, 0, 59), rgb(0, 30, 39));
+  opacity: 0.7;
+  z-index: -1;
+}
+.header__wrapper {
+  flex-direction: column;
+  /* background-color: var(--white); */
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-large);
+  height: 100%;
+}
+
+.child-one {
+  height: 80px;
+}
+
+.header__nav,
+.header__ul {
+  display: flex;
+  z-index: 1;
+}
+.header__nav {
+  /* background-color: var(--white); */
+  justify-content: center;
+  width: min(60%, 500px);
+}
+.header__ul {
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  /* background-color: black; */
+}
+
+.menu-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  scale: 0;
+  transition: var(--transition-duration);
+}
+.header__button {
+  padding: 4px;
+  border-radius: 0;
+  height: inherit;
+  width: inherit;
+  position: relative;
+  gap: var(--gap);
+  background: transparent;
+
+  & label {
+    cursor: pointer;
+  }
+}
+
+.header__menu-bar {
+  width: 30px;
+  margin-top: 4px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  padding: 40px var(--padding-small);
+  flex: 1;
+
+  & * {
+    color: var(--white);
+  }
+  /* */
+  & .right,
+  .left {
+    z-index: 1;
+  }
+}
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: var(--gap-large);
+  /* background-color: red; */
+}
+.hero__h1 {
+  max-width: 20ch;
+}
+.hero__h1 + p {
+  max-width: 100ch;
+}
+
+@media (max-width: 600px) {
+  .menu-container {
+    scale: 1;
+  }
+  .header__nav {
+    position: absolute;
+    right: 0;
+    scale: 0;
+    top: 70px;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    /* border: 2px solid grey; */
+    transition: var(--transition-duration);
+    transform-origin: top right;
+    /* box-shadow: var(--box-shadow-light); */
+    box-shadow: 0 15px 20px rgba(138, 138, 138, 0.356);
+    background-color: var(--white);
+  }
+  ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    width: 100%;
+    text-align: right;
+  }
+  /* when the menu icon is clicked */
+  .header:has(.header__button:where(:focus, :active)) .header__nav {
+    scale: 1;
+  }
+
+  .header__a {
+    display: block;
+    /* background-color: red; */
+    color: var(--black);
+    padding: calc(var(--padding) - 6px) 0;
+    border-radius: var(--border-radius);
+    transition: 0.25;
+  }
+  .header__a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  .header:has(.header__a:hover) .header__a:hover {
+    padding-right: 20px;
+  }
+}
