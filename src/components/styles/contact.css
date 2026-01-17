@@ -1,0 +1,219 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle animated background */
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 123, 255, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(100, 255, 218, 0.08),
+      transparent 45%
+    ); */
+  z-index: 0;
+}
+
+.contact__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.contact__title {
+  max-width: 720px;
+  margin-bottom: var(--margin-xl);
+  line-height: 1.2;
+  margin: 0 auto var(--margin-xl) auto;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.contact__form {
+  /* background: rgba(255, 255, 255, 0.75); */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  padding: var(--padding);
+  border-radius: 24px;
+
+  max-width: 620px;
+  margin: 0 auto;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.contact__form:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form__group {
+  position: relative;
+}
+
+/* Label */
+.form__group p {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: var(--color);
+  letter-spacing: 0.3px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.form__input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.85);
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--color);
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* Placeholder polish */
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+/* Focus state */
+.form__input:focus {
+  outline: none;
+  background-color: #fff;
+  border-color: var(--primary-color);
+
+  box-shadow:
+    0 0 0 4px rgba(0, 123, 255, 0.15),
+    0 8px 20px rgba(0, 123, 255, 0.15);
+}
+
+/* Select */
+select.form__input {
+  cursor: pointer;
+}
+
+/* Textarea */
+textarea.form__input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact button {
+  position: relative;
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--color-accent)
+  );
+
+  cursor: pointer;
+  overflow: hidden;
+
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.35);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: translateX(-100%);
+}
+
+.contact button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 45px rgba(0, 123, 255, 0.45);
+}
+
+.contact button:hover::before {
+  animation: shine 1.2s ease forwards;
+}
+
+.contact button:active {
+  transform: translateY(0);
+}
+
+@keyframes shine {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* =========================
+   RESPONSIVENESS
+========================= */
+
+@media (max-width: 600px) {
+  .contact__title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .contact__form {
+    border-radius: 18px;
+  }
+}

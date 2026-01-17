@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import IndustriesWeServe from "../components/IndustriesWeServe.jsx";
 import ScrollToTop from "../components/ScrollToTop.jsx";
 import { WhyChoose } from "../components/WhyChoose.jsx";
+import Contact from "../components/Contact.jsx";
 
 function Home() {
   const approachItems = [
@@ -216,6 +217,7 @@ function Home() {
 
       <IndustriesWeServe />
       <WhyChoose />
+      <Contact />
       <ScrollToTop />
     </main>
   );

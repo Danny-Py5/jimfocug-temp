@@ -36,7 +36,7 @@
   /* MARGIN */
   --margin: 8px;
   --margin-l: 16px;
-  --margin-xl: 24px;
+  --margin-xl: 64px;
 
   /* WIDTH */
   --section-max-width: 900px;
@@ -84,6 +84,7 @@ html {
     "Segoe UI";
   font-size: var(--font-size);
   scroll-margin-top: 800px;
+  
 }
 h1 {
   font-size: clamp(2.5rem, 7vw, 4rem);
@@ -145,6 +146,18 @@ body {
   height: 100%;
   background-color: var(--white);
   padding-bottom: 200px;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 123, 255, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(100, 255, 218, 0.08),
+      transparent 45%
+    ) ;
+    background-attachment: fixed;
 }
 
 /* utility */
@@ -238,7 +251,7 @@ body {
 
 /* Industries We Serve Section */
 .industries-we-serve {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
