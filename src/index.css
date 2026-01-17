@@ -145,7 +145,7 @@ button:hover {
 body {
   height: 100%;
   background-color: var(--white);
-  padding-bottom: 200px;
+
   background:
     radial-gradient(
       circle at 20% 20%,
@@ -436,4 +436,12 @@ body {
 .scroll-to-top__button:hover {
   background-color: var(--color-accent-dim);
   transform: translateY(-3px);
+}
+
+
+.footer p {
+  text-align: center;
+  margin: auto;
+  font-size: x-small;
+  max-width: 60ch;
 }

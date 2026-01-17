@@ -5,6 +5,7 @@ import IndustriesWeServe from "../components/IndustriesWeServe.jsx";
 import ScrollToTop from "../components/ScrollToTop.jsx";
 import { WhyChoose } from "../components/WhyChoose.jsx";
 import Contact from "../components/Contact.jsx";
+import { Footer } from "../components/Footer.jsx";
 
 function Home() {
   const approachItems = [
@@ -218,6 +219,7 @@ function Home() {
       <IndustriesWeServe />
       <WhyChoose />
       <Contact />
+      <Footer />
       <ScrollToTop />
     </main>
   );
