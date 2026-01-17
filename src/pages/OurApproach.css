@@ -55,16 +55,16 @@
 .our-approach__item {
   flex-shrink: 0;
   width: 300px;
-  height: 150px;
+  height: 100px;
   padding: var(--padding);
   margin: 0 1rem; /* Creates a 2rem gap */
   background-color: var(--white);
   border-radius: var(--border-radius); /* Pill shape */
   border: 1px solid #e0e0e0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   text-align: center;
-  color: #555;
   display: flex;
+  color: var(--color-dim);
   align-items: center;
   justify-content: center;
   gap: 1rem;
