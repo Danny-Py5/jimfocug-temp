@@ -3,6 +3,7 @@ import "./Services.css";
 import { Fragment } from "react";
 import IndustriesWeServe from "../components/IndustriesWeServe.jsx";
 import ScrollToTop from "../components/ScrollToTop.jsx";
+import { WhyChoose } from "../components/WhyChoose.jsx";
 
 function Home() {
   const approachItems = [
@@ -151,7 +152,7 @@ function Home() {
                   alt=""
                   className="our-approach__icon"
                 />
-                {item}
+                <p>{item}</p>
               </div>
             ))}
             {approachItems.map((item, index) => (
@@ -164,7 +165,7 @@ function Home() {
                   alt=""
                   className="our-approach__icon"
                 />
-                {item}
+                <p>{item}</p>
               </div>
             ))}
           </div>
@@ -214,6 +215,7 @@ function Home() {
       </section>
 
       <IndustriesWeServe />
+      <WhyChoose />
       <ScrollToTop />
     </main>
   );

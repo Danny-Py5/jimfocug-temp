@@ -55,17 +55,15 @@
 .our-approach__item {
   flex-shrink: 0;
   width: 300px;
-  height: 100px;
-  padding: 1.5rem 2rem;
+  height: 150px;
+  padding: var(--padding);
   margin: 0 1rem; /* Creates a 2rem gap */
-  background-color: #fff;
-  border-radius: 20px; /* Pill shape */
+  background-color: var(--white);
+  border-radius: var(--border-radius); /* Pill shape */
   border: 1px solid #e0e0e0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
-  font-size: 1rem;
   color: #555;
-  white-space: normal;
   display: flex;
   align-items: center;
   justify-content: center;
