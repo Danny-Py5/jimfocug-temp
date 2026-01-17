@@ -30,7 +30,7 @@ export function WhyChoose() {
   ];
 
   return (
-    <section className="whychoose section">
+    <section className="whychoose section" id="why-us">
       <div className="section-wrapper section-wrapper-padding padding">
         <h2 className="whychoose-title">
           Why Choose <span>JIMFOCUG</span>

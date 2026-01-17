@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact padding section-wrapper-padding">
+    <section className="contact padding section-wrapper-padding" id="contact">
       <div className="contact__wrapper section-wrapper">
         <h2 className="contact__title">
           Ready to transform your <span>processes and systems</span>? Let’s talk.

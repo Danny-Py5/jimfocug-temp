@@ -49,29 +49,30 @@ export function Header() {
           <nav className="header__nav">
             <ul className="header__ul">
               <li>
-                <Link className="header__a" to="#">
+                <a className="header__a" href="#">
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="header__a" to="#">
+                <a className="header__a" href="#">
                   About
-                </Link>
+                </a>
               </li>
+              
               <li>
-                <Link className="header__a" to="#services">
+                <a className="header__a" href="#services">
                   Services
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="header__a" to="#">
-                  Testimonials
-                </Link>
+                <a className="header__a" href="#why-us">
+                  Why Us
+                </a>
               </li>
               <li>
-                <Link className="header__a" to="#">
-                  Blogs
-                </Link>
+                <a className="header__a" href="#contact">
+                  Contact
+                </a>
               </li>
             </ul>
           </nav>
