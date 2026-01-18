@@ -20,7 +20,7 @@ export default function About() {
           <div className="info">
             <figure>
               <img
-                src="JIMFOCUG_BRANDING/General_Asset/about-img.png"
+                src="/JIMFOCUG_BRANDING/General_Asset/about-img.png"
                 width={300}
                 alt="about the CEO of Jimfocug"
               />
