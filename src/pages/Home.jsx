@@ -6,8 +6,19 @@ import ScrollToTop from "../components/ScrollToTop.jsx";
 import { WhyChoose } from "../components/WhyChoose.jsx";
 import Contact from "../components/Contact.jsx";
 import { Footer } from "../components/Footer.jsx";
+import { useInView } from "../hooks/useInView.js";
 
 function Home() {
+  const { ref: whatWeDoRef, inView: whatWeDoInView } = useInView({
+    threshold: 0.1,
+  });
+  const { ref: industriesRef, inView: industriesInView } = useInView({
+    threshold: 0.1,
+  });
+  const { ref: whyChooseRef, inView: whyChooseInView } = useInView({
+    threshold: 0.1,
+  });
+
   const approachItems = [
     "Problem-driven, not tool-driven",
     "Practical and scalable solutions",
@@ -103,15 +114,18 @@ function Home() {
             practices to help organisations:
           </p>
         </div>
-        <div className="flex padding gap2 what-we-do__list flex-wrap">
-          <div>
+        <div
+          ref={whatWeDoRef}
+          className="flex padding gap2 what-we-do__list flex-wrap"
+        >
+          <div className={`${whatWeDoInView ? "slideIn" : ""}`}>
             <figure>
               <img src="JIMFOCUG_BRANDING/icons/automate.png" alt="" />
             </figure>
 
             <p>Automate manual and inefficient processes</p>
           </div>
-          <div>
+          <div className={`${whatWeDoInView ? "slideIn slideIn--wait1" : ""}`}>
             <figure>
               <img
                 src="JIMFOCUG_BRANDING/icons/data-visibility.png"
@@ -120,7 +134,7 @@ function Home() {
             </figure>
             <p>Improve data visibility and reporting</p>
           </div>
-          <div>
+          <div className={`${whatWeDoInView ? "slideIn slideIn--wait2" : ""}`}>
             <figure>
               <img
                 src="JIMFOCUG_BRANDING/icons/scalable-app.png"
@@ -129,7 +143,7 @@ function Home() {
             </figure>
             <p>Build scalable business applications</p>
           </div>
-          <div>
+          <div className={`${whatWeDoInView ? "slideIn slideIn--wait3" : ""}`}>
             <figure>
               <img
                 src="JIMFOCUG_BRANDING/icons/sustainable-performance.png"
@@ -216,8 +230,18 @@ function Home() {
         </div>
       </section>
 
-      <IndustriesWeServe />
-      <WhyChoose />
+      <div
+        ref={industriesRef}
+        className={industriesInView ? "slideIn-trigger" : ""}
+      >
+        <IndustriesWeServe />
+      </div>
+      <div
+        ref={whyChooseRef}
+        className={whyChooseInView ? "slideIn-trigger" : ""}
+      >
+        <WhyChoose />
+      </div>
       <Contact />
       <Footer />
       <ScrollToTop />

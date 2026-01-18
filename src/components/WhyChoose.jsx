@@ -41,7 +41,7 @@ export function WhyChoose() {
           long-term thinking.
         </p>
 
-        <div className="whychoose-container flex flex1">
+        <div className="whychoose-container flex flex1 why-choose-us__item">
           <div className="whychoose-grid">
             {reasons.map((item, index) => (
               <div key={index} className="whychoose-card">

@@ -1,0 +1,11 @@
+.info figure {
+  float: right;
+  width: clamp(300px, 40vw, 600px);
+  margin-left: var(--margin-l);
+
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
