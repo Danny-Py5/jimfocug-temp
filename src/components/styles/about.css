@@ -1,3 +1,7 @@
+.info {
+  max-width: 1000px;
+  margin: auto;
+}
 .info figure {
   float: right;
   width: clamp(300px, 40vw, 600px);
