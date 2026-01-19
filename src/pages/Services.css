@@ -5,7 +5,7 @@
   position: relative;
   padding-bottom: 5rem;
   overflow: hidden;
-  background: url(JIMFOCUG_BRANDING/General_Asset/mac.png) no-repeat center
+  background: url(/JIMFOCUG_BRANDING/General_Asset/mac.png) no-repeat center
     center/cover;
   isolation: isolate;
   z-index: -1;
