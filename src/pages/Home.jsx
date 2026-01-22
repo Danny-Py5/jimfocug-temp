@@ -71,7 +71,6 @@ function Home() {
           heading: "Technologies:",
           items: [
             "Microsoft Power Apps & Power Automate",
-            "SharePoint & Microsoft Lists",
             "ASP.NET Web Applications",
             "Flutter Mobile Applications",
             "React Web Applications",
@@ -83,8 +82,6 @@ function Home() {
             "Leave and HR management systems",
             "Fleet and asset management systems",
             "Clinic and healthcare applications",
-            "Service request and workflow systems",
-            "Data collection and reporting tools",
           ],
         },
       ],
@@ -98,7 +95,7 @@ function Home() {
         "ASP.NET web development",
         "Flutter mobile development",
         "Digital process automation",
-        "Data and reporting with Microsoft tools",
+        "ISO 9001, 14001, 45001 implementation and auditing",
       ],
     },
   ];

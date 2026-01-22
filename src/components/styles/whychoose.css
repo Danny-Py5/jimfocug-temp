@@ -20,18 +20,18 @@
 .align-right {
   min-width: 350px;
   max-width: 30%;
-  background-color: var(--color-accent-x-dim);
+  background-color: var(--light-grey);
+  /* background-color: var(--color-accent-x-dim); */
   border-radius: var(--border-radius);
   padding: var(--padding);
   align-self: flex-start;
 
-  & * {
+  /* & * {
     color: white;
-  }
+  } */
 }
 .align-right p {
   margin-top: 40px;
-  color: var(--light-grey);
 }
 
 .whychoose-card {

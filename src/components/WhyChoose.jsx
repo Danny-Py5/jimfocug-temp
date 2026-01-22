@@ -59,17 +59,14 @@ export function WhyChoose() {
             </figure>
             <h3>Real-World Application Experience</h3>
             <p>
-              Our team has real, hands-on experience building applications that
-              are used in real-life business situations. We focus on creating
-              solutions that help organizations work better, save time, and
-              reduce everyday operational problems. Each application we build is
-              designed to solve a clear and practical challenge.
+              We build simple and practical applications that help businesses
+              solve everyday problems and work more efficiently. Our solutions
+              are made to save time and improve daily operations.
             </p>
             <p>
-              We do not just build software for display; we build tools that
-              actually work in daily operations. From planning to delivery, we
-              ensure the solution fits the business needs, is easy to use, and
-              delivers real value over time.
+              We focus on building tools that are easy to use and designed for
+              real business needs. Each application is created to deliver real
+              value and work well over time.
             </p>
           </div>
         </div>
